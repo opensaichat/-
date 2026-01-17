@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Мой сайт</title>
+<style>
+    body {
+        background: #111;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .box {
+        text-align: center;
+        background: #1c1c1c;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        width: 300px;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        background: #ff004c;
+        border: none;
+        color: white;
+        padding: 10px 16px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #ff3366;
+    }
+
+    #text {
+        margin-top: 15px;
+        font-size: 18px;
+        color: #ff004c;
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="box">
+    <!-- ФОТО ПРИ ЗАГРУЗКЕ САЙТА -->
+    <img src="photo.jpg" alt="Фото">
+
+    <button onclick="showText()">Нажми меня</button>
+
+    <div id="text">Женя дура</div>
+</div>
+
+<script>
+function showText() {
+    document.getElementById('text').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
